@@ -1,0 +1,57 @@
+
+
+  
+
+   .timer h4 {
+    font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  
+
+  color: #BFE428;
+  
+  }
+  
+  .minutes-holder {
+    margin: auto;
+    flex-basis: 20%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #c26cf3;
+  }
+
+  
+  
+  .timer span {
+    display: block;
+    font-size: 22px;
+    margin: 10px;
+    color: #F1C40F;
+  }
+
+.text {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+    margin-bottom: 50px;
+    flex-basis: 90%;
+    font-size: 35px;
+  }
+   
+ 
+  
+
+  .minutes-text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 70px;
+  }
+
+  .bottom-buttons {
+    display: flex;
+   justify-content: center;
+  }
+  

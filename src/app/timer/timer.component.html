@@ -1,0 +1,34 @@
+<div class="timer">
+    
+      <ng-container *ngIf="!isWorking; else elseTemplate">
+        {{this.title}}
+      </ng-container>
+
+      <ng-template #elseTemplate>
+        <div class="text">
+          <h4> Демо трайба {{trybeName}} будет скоро </h4>
+        </div>
+        <div class="minutes-holder">
+          <div class="minutes-text">
+            <span id="minutes"> {{minutesToDday}} минут </span>
+            <span id="seconds"> {{secondsToDday}} секунд </span>
+          </div>
+        </div>
+      </ng-template>
+    
+
+      <div class="bottom-buttons">
+        <app-custom-btn (click)="addOneMinute()">
+              Добавить минуту
+        </app-custom-btn>
+      
+        <app-custom-btn (click)="setDefault()">
+              Сбросить
+        </app-custom-btn>
+      
+        <app-custom-btn (click)="setFinished()">
+              Начать принудительно
+        </app-custom-btn>
+    </div>
+
+  </div>
