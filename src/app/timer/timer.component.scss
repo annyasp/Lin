@@ -1,4 +1,28 @@
 
+.ball {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #BFE428;
+  animation: moveBall 2s ease-in-out infinite;
+}
+
+@keyframes moveBall {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(200px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+
+
 
   
 

@@ -1,3 +1,10 @@
+
+<div class="ball-container" *ngIf="isFinished">
+  <div class="ball"></div>
+  <div class="ball" style="left: 100px;"></div>
+  <div class="ball" style="left: 200px;"></div>
+</div>
+
 <div class="timer">
     
       <ng-container *ngIf="!isWorking; else elseTemplate">

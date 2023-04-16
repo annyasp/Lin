@@ -7,5 +7,13 @@ import { Subscription, interval } from 'rxjs';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  selectedValue!: string;
 
+  handleSelectChange(event: { target: { value: string; }; }) {
+    this.selectedValue = event.target.value;
+  }
+
+  handleButtonClick() {
+    console.log(this.selectedValue);
+  }
 }

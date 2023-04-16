@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./button.component.scss']
 })
 export class ButtonComponent {
+  selectedOption: string | undefined;
+  constructor() { }
 
+  ngOnInit(): void {
+  }
+
+  onButtonClicked() {
+    console.log('Selected option:', this.selectedOption);
+   
+  }
+
+  
 }

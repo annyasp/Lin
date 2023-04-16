@@ -1,9 +1,9 @@
 <div class="holder-text"><h1 class="text-choose">choose a team</h1></div>
 
-<select class="select-css"> 
+<select (change)="selectChange.emit($event)" class="select-css"> 
 
-  <option>marmots</option> 
-  <option>marmots</option> 
-  <option>marmots</option> 
-  <option>marmots</option> 
+  <option value="option1">marmots</option> 
+  <option value="option2">marmots2</option> 
+  <option value="option3">marmots3</option> 
+
   </select>

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef, EventEmitter, Output } from '@angular/core';
+
 
 @Component({
   selector: 'app-input',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./input.component.scss']
 })
 export class InputComponent {
+  
+  @Output() selectChange = new EventEmitter();
+  
 
+ 
 }

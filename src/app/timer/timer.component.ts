@@ -91,11 +91,14 @@ export class TimerComponent {
       let currentDate = this.demoStartTimeStamp;
       let newDate = new Date(currentDate.getTime() * 60000); 
       this.demoStartTimeStamp = newDate;
+      this.isFinished = true;
     }
   
     ngOnDestroy() {
       this.subscription.unsubscribe();
     }
+
+    isFinished: boolean = false;
   }
   
 
